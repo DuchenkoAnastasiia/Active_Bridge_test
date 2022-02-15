@@ -1,0 +1,39 @@
+<%= form_with url: bookmarks_path, class: "form_search" ,method: :get do |form| %>
+  <%= form.text_field :search, class: "form_search_input", placeholder: "Search" %>
+  <%= button_tag(type: 'submit', class: "butt_search", name: nil) do%>
+      <%= image_tag("search.png", class: "butt_img") %>
+  <% end %>
+<% end %>
+
+<div class="container">
+  <div class="tabs">
+    <% @tabs.each do |bookmark| %>
+      <%= link_to bookmark.url,  target: "_blank", class: "col" do%>
+        <% if bookmark.thumbnail.attached? %>
+          <img class="book_img" src="<%= url_for(bookmark.thumbnail) %>" >
+        <% end %>
+      <% end %>
+    <% end %>
+    <%= link_to new_bookmark_path, class: "col" do%>
+      <%= image_tag("plus.png", class: "tabs_img") %>
+    <% end %>
+  </div>
+  <%= paginate @tabs %>
+</div>
+
+<div class="list">
+  <ul class="list_ul">
+    <li class="list_li active">
+      <%= image_tag("like.png", class: "list_img") %>
+      <span class="list_li_text">My Favorites</span>
+    </li>
+
+    <li class="list_li">
+      <%= link_to friends_path do%>
+          <%= image_tag("friends.png", class: "list_img") %>
+          <span class="list_li_text">My Friends</span>
+      <% end %>
+    </li>
+  </ul>
+</div>
+

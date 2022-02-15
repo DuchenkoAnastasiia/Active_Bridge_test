@@ -1,0 +1,20 @@
+<div class="form_bookmark">
+    <%= form_with scope: :bookmarks, url: bookmarks_path, class: "form_all", data: { controller: "microlink" }, local: true do |form| %>
+    <p>
+        <%= form.label :URL, class: "form_title" %><br>
+        <%= form.text_field :url, data: { microlink_target: "input", action: "change->microlink#handleChange" }, class: "form_input" %>
+        <%= form.hidden_field :image, data: { microlink_target: "imageInput" } %>
+    </p>
+
+    <div data-microlink-target="output" style="display: none">
+        <img src="" class="form_bookmark_search_img"/>
+    </div>
+
+    <p>
+        <%= form.submit :Add, data: {microlink_target: "button"}, class: "form_button" , disabled: true %>
+    </p>
+
+    
+    <% end %>
+</div>
+

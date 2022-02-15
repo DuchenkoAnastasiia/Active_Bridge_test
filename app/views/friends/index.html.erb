@@ -1,0 +1,12 @@
+<div class="fb_friends">  
+    <div class="all">
+        <div>
+            <span class="fb_friends_title">Friends</span>
+            <div>
+                <% @friends.each do |friend| %>
+                    <%= link_to friend.name, friend_path(friend), class: "fb_friends_text" %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,396 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+.bookmarks {
+  background-color: #5b42f3;
+}
+.butt_search {
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid #cfcfcf;
+  border-left: none;
+  background-color: rgb(229, 230, 233);
+}
+.butt_search:hover {
+  transition: all 0.3s;
+  background-color: #5dd6bc;
+}
+.butt_img {
+  width: 15px;
+  height: 15px;
+  background: none;
+}
+.form_search {
+  display: flex;
+  justify-content: center;
+}
+.form_search_input {
+  width: 30%;
+  border: 2px solid #cfcfcf;
+  padding: 10px;
+}
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1.5fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 18px;
+  grid-row-gap: 18px;
+  border: none;
+  margin-top: 30px;
+}
+.col {
+  border: 1px solid rgb(136, 135, 135);
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 5px;
+  -webkit-box-shadow: -2px 0px 20px 0px rgba(34, 60, 80, 0.34);
+  -moz-box-shadow: -2px 0px 20px 0px rgba(34, 60, 80, 0.34);
+  box-shadow: -2px 0px 20px 0px rgba(34, 60, 80, 0.34);
+  background-color: #d8d5d5;
+  min-height: 150px;
+}
+.col:hover {
+  transition: all 0.3s;
+  background-color: #5dd6bc;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+.tabs_img {
+  width: 50px;
+  height: 50px;
+}
+.butt_navigation {
+  display: flex;
+  justify-content: end;
+  margin-right: 3%;
+  margin-bottom: 20px;
+}
+.butt_nav {
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+}
+.butt_nav:hover {
+  transition: all 0.3s;
+  background-color: #5dd6bc;
+}
+.list {
+  border-top: 1px solid rgb(180, 179, 179);
+  background-color: #dfdddd;
+  margin: 0;
+}
+.list_ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.list_li {
+  padding: 15px;
+  border: 1px solid rgb(180, 179, 179);
+  border-bottom: 3px solid rgb(180, 179, 179);
+  border-top: none;
+  cursor: pointer;
+  color: rgb(165, 163, 163);
+}
+.list_li_text {
+  color: grey;
+}
+.list_li:hover {
+  transition: all 0.3s;
+  color: rgb(76, 190, 152);
+  border-bottom: 3px solid rgb(76, 190, 152);
+}
+.list_li_text:hover {
+  transition: all 0.3s;
+  color: rgb(76, 190, 152);
+}
+.list_img {
+  position: relative;
+  top: 15%;
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+.form_bookmark {
+  display: flex;
+  justify-content: center;
+}
+.form_all {
+  background-color: #e0dfdf;
+  width: 50%;
+  text-align: center;
+  margin: 4%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 14px 8px rgba(34, 60, 80, 0.14);
+  -moz-box-shadow: 0px 1px 14px 8px rgba(34, 60, 80, 0.14);
+  box-shadow: 0px 1px 14px 8px rgba(34, 60, 80, 0.14);
+}
+.form_title {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.form_input {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #91aff0;
+}
+.form_button {
+  width: 40%;
+  font-weight: 600;
+  background-color: #c2fbd7;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: green;
+  cursor: pointer;
+  font-size: 1em;
+  height: 40px;
+  padding: 0 25px;
+  transition: all 200ms;
+}
+.form_button:hover {
+  background-color: #afe6c3;
+  transform: scale(1.05);
+}
+.register {
+  list-style: none;
+}
+.register_sign_in {
+  color: #f4f8f5;
+  display: flex;
+  justify-content: end;
+  font-size: 18px;
+  margin-right: 30px;
+}
+.link {
+  margin-left: 10px;
+  color: #faf9f9;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border-radius: 7px;
+  padding: 7px;
+  text-decoration: none;
+}
+.link:hover {
+  background-image: linear-gradient(144deg, #8414d4, #3421b6 50%, #118d96);
+}
+.book_img {
+  width: 60%;
+  height: 100%;
+}
+.tabs_img {
+  margin-top: 20%;
+}
+.registration_form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10%;
+  background-color: #f7f2f2;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 18px 15px rgba(34, 60, 80, 0.15);
+  -moz-box-shadow: 0px 1px 18px 15px rgba(34, 60, 80, 0.15);
+  box-shadow: 0px 1px 18px 15px rgba(34, 60, 80, 0.15);
+  text-align: center;
+  padding: 30px;
+}
+.registration_title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.registration_input {
+  padding: 15px;
+  margin: 10px;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 4px;
+}
+.registration_remember {
+  margin: 20px;
+}
+.registration_button {
+  width: 90%;
+  margin: 5px;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.registration_button:hover {
+  background-image: linear-gradient(144deg, #8414d4, #3421b6 50%, #118d96);
+}
+.registration_link {
+  color: #5abdf7;
+  text-decoration: none;
+  font-size: 17px;
+}
+.registration_link:hover {
+  color: #1d79af;
+  transition: all 0.3s;
+}
+.registration_link_butt {
+  width: 90%;
+  margin: 5px;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.registration_link_butt:hover {
+  background-image: linear-gradient(144deg, #8414d4, #3421b6 50%, #118d96);
+}
+.registration_with_facebook {
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  text-decoration: none;
+  font-size: 20px;
+  color: azure;
+  border-radius: 3px;
+}
+.registration_with_facebook:hover {
+  background-image: linear-gradient(144deg, #8414d4, #3421b6 50%, #118d96);
+}
+.registration_error {
+  list-style: none;
+  color: crimson;
+}
+.form_bookmark_search_img {
+  width: 60%;
+}
+.pagination {
+  background: none;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+span {
+  margin: 5px;
+}
+a {
+  text-decoration: none;
+  color: rgb(245, 243, 243);
+}
+.pagination_button {
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.pagination_button:hover {
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.active {
+  transition: all 0.3s;
+  color: rgb(76, 190, 152);
+  border-bottom: 3px solid rgb(76, 190, 152);
+}
+.fb_friends {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.fb_friends_text {
+  color: #6990d8;
+  font-weight: bold;
+}
+.fb_friends_text:hover {
+  transition: all 0.3s;
+  color: #644db8;
+}
+.fb_friends_title {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.all {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f2f2;
+  width: 50%;
+  align-items: center;
+  padding: 30px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: -5px -1px 43px 12px rgba(34, 60, 80, 0.31);
+  -moz-box-shadow: -5px -1px 43px 12px rgba(34, 60, 80, 0.31);
+  box-shadow: -5px -1px 43px 12px rgba(34, 60, 80, 0.31);
+}
+@media screen and (max-width: 900px) {
+  .tabs {
+    grid-template-columns: repeat(3, 1.5fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tabs {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tabs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 425px) {
+  .tabs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .registration_form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .pagination_button {
+    padding: 10px 10px;
+  }
+  .list_li {
+    padding: 10px;
+  }
+  .registration_form {
+    width: 65%;
+    padding: 20px;
+  }
+  .all {
+    width: 65%;
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmarks</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="bookmarks">
+    <ul class="register">
+      <% if user_signed_in? %>
+        <div class="register_sign_in">
+          <li><%= "Hi, #{current_user.name}" %></li>
+          <li><%= link_to 'Sign Out', destroy_user_session_path, class: "link", method: :delete %></li>
+        </div>
+     <% end %>
+    </ul>
+    
+    <%= yield %>
+  </body>
+</html>
