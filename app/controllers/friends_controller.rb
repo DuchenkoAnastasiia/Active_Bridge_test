@@ -1,6 +1,6 @@
 class FriendsController < ApplicationController
     before_action :authenticate_user!
-    
+
     def index
         auth = FbGraph2::Auth.new("4836415126440760", "2f39c1acf3697d1c173642fc05eb5852")
         fb_user = FbGraph2::User.new(current_user.uid).authenticate(auth.access_token!)
@@ -9,6 +9,6 @@ class FriendsController < ApplicationController
     end
 
     def show
-        @tabs = User.find(params[:id]).bookmarks.search(params[:search]).order(:id).page params[:page]
+        @tabs = User.find(params[:id]).bookmarks.search(params[:search]).order(:id).page(params[:page]).per 12
     end
 end
