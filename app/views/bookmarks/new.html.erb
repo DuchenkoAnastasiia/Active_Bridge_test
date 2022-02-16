@@ -3,6 +3,7 @@
     <p>
         <%= form.label :URL, class: "form_title" %><br>
         <%= form.text_field :url, data: { microlink_target: "input", action: "change->microlink#handleChange" }, class: "form_input" %>
+        <div data-microlink-target="message"></div>
         <%= form.hidden_field :image, data: { microlink_target: "imageInput" } %>
     </p>
 
