@@ -1,4 +1,6 @@
 class FriendsController < ApplicationController
+    before_action :authenticate_user!
+    
     def index
         auth = FbGraph2::Auth.new("4836415126440760", "2f39c1acf3697d1c173642fc05eb5852")
         fb_user = FbGraph2::User.new(current_user.uid).authenticate(auth.access_token!)
